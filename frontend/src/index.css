@@ -6,3 +6,7 @@
 @theme {
     --color-primary: oklch(0.6092 0.2121 273.52);
 }
+
+.active hr {
+    @apply block
+}
