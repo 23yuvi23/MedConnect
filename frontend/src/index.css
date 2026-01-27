@@ -3,10 +3,25 @@
     --color-primary: oklch(0.6092 0.2121 273.52);
 } */
 
+/* custom tailwind property for ---grid col auto---in TopDoctors.jsx */
+.grid-cols-auto {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+
 @theme {
     --color-primary: oklch(0.6092 0.2121 273.52);
+    
 }
+
+
 
 .active hr {
     @apply block
+}
+
+/* scroll bar hidden in SpecialityMenu */
+ ::-webkit-scrollbar{
+    @apply hidden
 }
