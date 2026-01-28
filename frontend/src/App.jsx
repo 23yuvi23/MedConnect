@@ -1,3 +1,6 @@
+// use effect so that whenever we change the page it scrolls to TOP (0,0)
+import ScrollToTop from './components/ScrollToTop'
+
 import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import Doctors from './pages/Doctors'
@@ -12,8 +15,10 @@ import Footer from './components/Footer'
 
 const App = () => {
   return (
+    
     <div className='mx-4 sm:mx-[10%]'>
       <Navbar/>
+      <ScrollToTop/>
       <Routes>
         <Route path = "/" element={<Home/>}/>
         <Route path = "/doctors" element={<Doctors/>}/>

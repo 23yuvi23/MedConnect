@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { AppContext } from '../context/AppContext'
 
+
 const Doctors = () => {
   const { speciality } = useParams()
   // console.log(speciality);
@@ -23,6 +24,8 @@ const Doctors = () => {
       SetFilterDoc(doctors)
     }
   }
+
+
 
   // now we have to apply this filter whenver doc or speciality gets changed 
   useEffect(()=>{
