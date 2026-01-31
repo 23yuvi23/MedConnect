@@ -4,3 +4,8 @@
     --color-primary: oklch(0.6092 0.2121 273.52);
     
 }
+
+/* scroll bar hidden in SpecialityMenu */
+ ::-webkit-scrollbar{
+    @apply hidden
+}
